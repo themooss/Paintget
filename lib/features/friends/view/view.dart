@@ -1,1 +1,1 @@
-export 'friends_modal.dart';
+export 'friends_modal_screen.dart';
