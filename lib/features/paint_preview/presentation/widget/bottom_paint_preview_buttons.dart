@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paintget/features/paint_preview/widget/buttons/buttons.dart';
+import 'package:paintget/features/paint_preview/presentation/widget/buttons/buttons.dart';
 
 class BottomPaintPreviewButtons extends StatelessWidget {
   const BottomPaintPreviewButtons({super.key, required this.buttonColor});

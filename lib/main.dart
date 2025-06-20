@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:paintget/features/messages/view/view.dart';
-import 'package:paintget/features/paint_preview/paint_preview.dart';
-import 'package:paintget/features/profile/view/profile_screen.dart';
+import 'package:paintget/features/messages/presentation/view/view.dart';
+import 'package:paintget/features/paint_preview/presentation/paint_preview.dart';
+import 'package:paintget/features/profile/presentation/view/profile_screen.dart';
 import 'package:paintget/ui/theme/theme.dart';
 
 void main() {
