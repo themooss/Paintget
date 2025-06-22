@@ -16,7 +16,7 @@ class TopPaintPreviewButtons extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.symmetric(horizontal: 15),
           height: 70,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -51,9 +51,7 @@ class TopPaintPreviewButtons extends StatelessWidget {
               ),
               BaseButtonWidget(
                 child: IconButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/messages');
-                  },
+                  onPressed: () {},
                   icon: Icon(Icons.chat_bubble_outline_rounded),
                   color: textColor,
                 ),

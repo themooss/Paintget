@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paintget/features/home/presentation/view/home_screen.dart';
 import 'package:paintget/features/messages/presentation/view/view.dart';
 import 'package:paintget/features/paint_preview/presentation/paint_preview.dart';
 import 'package:paintget/features/profile/presentation/view/profile_screen.dart';
@@ -15,14 +16,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/': (BuildContext context) => PaintPreviewScreen(),
-        '/profile': (BuildContext context) => ProfileScreen(),
-        '/messages': (BuildContext context) => MessagesScreen(),
+        HomeScreen.routeName: (BuildContext context) => HomeScreen(),
+        PaintPreviewScreen.routeName: (BuildContext context) =>
+            PaintPreviewScreen(),
+        ProfileScreen.routeName: (BuildContext context) => ProfileScreen(),
+        MessagesScreen.routeName: (BuildContext context) => MessagesScreen(),
       },
-      initialRoute: '/',
+      initialRoute: HomeScreen.routeName,
       debugShowCheckedModeBanner: false,
       title: 'PaintGet',
       theme: darktheme,
+      //home: HomeScreen(),
     );
   }
 }
