@@ -10,7 +10,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       scrollDirection: Axis.vertical,
-      slivers: [ProfileAppBar(), MonthListWidget()],
+      slivers: const [ProfileAppBar(), MonthListWidget()],
     );
   }
 }

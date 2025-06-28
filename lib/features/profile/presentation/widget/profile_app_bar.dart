@@ -15,13 +15,13 @@ class ProfileAppBar extends StatelessWidget {
       bottom: PreferredSize(
         preferredSize: Size.fromHeight(MediaQuery.of(context).size.height / 6),
         child: Container(
-          margin: EdgeInsets.only(bottom: 16),
+          margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text("Name"), Text('NAme 2')],
+                children: const [Text("Name"), Text('NAme 2')],
               ),
               Container(
                 alignment: Alignment.center,

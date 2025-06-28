@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color scaffoldBackgroundColor = Color(0xff101010);
+const Color scaffoldBackgroundColor = Color(0xff080808);
 const Color buttonBackgroundColor = Color(0xff404040);
 const Color textColor = Colors.white70;
 

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:paintget/features/home/presentation/view/home_screen.dart';
-import 'package:paintget/features/paint_preview/presentation/view/view.dart';
 import 'package:paintget/ui/theme/theme.dart';
 
 class ProfileAppBarButtons extends StatelessWidget {
@@ -44,7 +43,7 @@ class ProfileAppBarButtons extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(PaintPreviewScreen.routeName);
+              Navigator.of(context).popAndPushNamed(HomeScreen.routeName);
             },
             icon: Icon(Icons.arrow_forward_ios),
             iconSize: 25,
