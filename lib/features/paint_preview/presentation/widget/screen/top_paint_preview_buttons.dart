@@ -13,6 +13,7 @@ class TopPaintPreviewButtons extends StatelessWidget {
   final Color buttonBackgroundColor;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Stack(
       children: [
         Container(
@@ -38,14 +39,8 @@ class TopPaintPreviewButtons extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.people, color: buttonColor),
-                    Text(
-                      "Add Friends",
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: buttonColor,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
+                    SizedBox(width: 5),
+                    Text("Add Friends", style: theme.textTheme.titleSmall),
                   ],
                 ),
               ),

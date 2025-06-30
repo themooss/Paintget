@@ -16,7 +16,7 @@ class DrawButton extends StatelessWidget {
       child: IconButton(
         iconSize: MediaQuery.of(context).size.width / 5,
         onPressed: () {},
-        icon: Icon(Icons.draw, color: buttonColor),
+        icon: Icon(Icons.draw_outlined, color: buttonColor),
       ),
     );
   }
