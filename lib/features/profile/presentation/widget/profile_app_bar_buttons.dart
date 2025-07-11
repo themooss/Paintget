@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:paintget/features/home/presentation/view/home_screen.dart';
-import 'package:paintget/ui/theme/theme.dart';
+import 'package:paintget/config/theme/theme.dart';
 
 class ProfileAppBarButtons extends StatelessWidget {
   const ProfileAppBarButtons({super.key});

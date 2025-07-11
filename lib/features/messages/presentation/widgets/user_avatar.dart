@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paintget/ui/theme/theme.dart';
+import 'package:paintget/config/theme/theme.dart';
 
 class UserAvatar extends StatelessWidget {
   const UserAvatar({super.key});

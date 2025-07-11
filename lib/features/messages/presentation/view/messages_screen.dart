@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:paintget/features/messages/presentation/widgets/widgets.dart';
-import 'package:paintget/ui/theme/theme.dart';
+import 'package:paintget/config/theme/theme.dart';
 
 class MessagesScreen extends StatelessWidget {
   const MessagesScreen({super.key});
