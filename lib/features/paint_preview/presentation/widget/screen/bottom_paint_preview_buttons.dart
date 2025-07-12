@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:paintget/features/paint_preview/presentation/widget/button_components/buttons.dart';
 
 class BottomPaintPreviewButtons extends StatelessWidget {
-  const BottomPaintPreviewButtons({super.key, required this.buttonColor});
-
-  final Color buttonColor;
+  const BottomPaintPreviewButtons({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +11,7 @@ class BottomPaintPreviewButtons extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          GalleryButton(buttonColor: buttonColor),
-          DrawButton(buttonColor: buttonColor),
-          RefreshButton(buttonColor: buttonColor),
-        ],
+        children: [GalleryButton(), DrawButton(), RefreshButton()],
       ),
     );
   }

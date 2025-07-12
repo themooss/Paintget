@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DrawButton extends StatelessWidget {
-  const DrawButton({super.key, required this.buttonColor});
-
-  final Color buttonColor;
+  const DrawButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +14,7 @@ class DrawButton extends StatelessWidget {
       child: IconButton(
         iconSize: MediaQuery.of(context).size.width / 5,
         onPressed: () {},
-        icon: Icon(Icons.draw_outlined, color: buttonColor),
+        icon: Icon(Icons.draw_outlined, color: theme.secondaryHeaderColor),
       ),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:paintget/features/home/presentation/view/home_screen.dart';
 import 'package:paintget/features/messages/presentation/view/view.dart';
+import 'package:paintget/features/paint_modification/presentation/view/paint_modification_screen.dart';
 import 'package:paintget/features/paint_preview/presentation/paint_preview.dart';
 import 'package:paintget/features/profile/presentation/view/profile_screen.dart';
 import 'package:paintget/config/theme/theme.dart';
@@ -19,6 +20,8 @@ class MyApp extends StatelessWidget {
         HomeScreen.routeName: (BuildContext context) => HomeScreen(),
         PaintPreviewScreen.routeName: (BuildContext context) =>
             PaintPreviewScreen(),
+        PaintModificationScreen.routeName: (BuildContext context) =>
+            PaintModificationScreen(),
         ProfileScreen.routeName: (BuildContext context) => ProfileScreen(),
         MessagesScreen.routeName: (BuildContext context) => MessagesScreen(),
       },

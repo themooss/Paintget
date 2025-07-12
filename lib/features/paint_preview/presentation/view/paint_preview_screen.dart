@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:paintget/config/theme/theme.dart';
 
 import '../widget/widget.dart';
 
@@ -18,12 +17,9 @@ class PaintPreviewScreen extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           child: Column(
             children: [
-              TopPaintPreviewButtons(
-                buttonColor: textColor,
-                buttonBackgroundColor: buttonBackgroundColor,
-              ),
-              PaintPreviewPicture(backgroundColor: buttonBackgroundColor),
-              BottomPaintPreviewButtons(buttonColor: textColor),
+              TopPaintPreviewButtons(),
+              PaintPreviewPicture(),
+              BottomPaintPreviewButtons(),
             ],
           ),
         ),

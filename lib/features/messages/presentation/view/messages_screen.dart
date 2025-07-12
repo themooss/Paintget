@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:paintget/features/home/presentation/view/home_screen.dart';
 import 'package:paintget/features/messages/presentation/widgets/widgets.dart';
-import 'package:paintget/config/theme/theme.dart';
 
 class MessagesScreen extends StatelessWidget {
   const MessagesScreen({super.key});
@@ -20,8 +20,13 @@ class MessagesScreen extends StatelessWidget {
           title: Row(
             children: [
               IconButton(
-                icon: Icon(Icons.arrow_back_ios, size: 25, color: textColor),
-                onPressed: () {},
+                icon: Icon(
+                  Icons.arrow_back_ios,
+                  size: 25,
+                  color: theme.secondaryHeaderColor,
+                ),
+                onPressed: () =>
+                    Navigator.of(context).popAndPushNamed(HomeScreen.routeName),
               ),
               SizedBox(width: screenWidth / 6),
               Text('Messages', style: theme.textTheme.titleMedium),

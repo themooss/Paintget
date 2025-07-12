@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:paintget/config/theme/theme.dart';
 import 'package:paintget/ui/widgets/base_button_widget.dart';
 
 class TopPaintPreviewButtons extends StatelessWidget {
-  const TopPaintPreviewButtons({
-    super.key,
-    required this.buttonColor,
-    required this.buttonBackgroundColor,
-  });
-
-  final Color buttonColor;
-  final Color buttonBackgroundColor;
+  const TopPaintPreviewButtons({super.key});
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -25,7 +17,7 @@ class TopPaintPreviewButtons extends StatelessWidget {
               BaseButtonWidget(
                 child: IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.person, color: buttonColor),
+                  icon: Icon(Icons.person, color: theme.secondaryHeaderColor),
                 ),
               ),
               Container(
@@ -33,12 +25,12 @@ class TopPaintPreviewButtons extends StatelessWidget {
                 height: 40,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
-                  color: buttonBackgroundColor,
+                  color: theme.focusColor,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.people, color: buttonColor),
+                    Icon(Icons.people, color: theme.secondaryHeaderColor),
                     SizedBox(width: 5),
                     Text("Add Friends", style: theme.textTheme.titleSmall),
                   ],
@@ -48,7 +40,7 @@ class TopPaintPreviewButtons extends StatelessWidget {
                 child: IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.chat_bubble_outline_rounded),
-                  color: textColor,
+                  color: theme.secondaryHeaderColor,
                 ),
               ),
             ],

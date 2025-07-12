@@ -11,6 +11,7 @@ final darktheme = ThemeData(
   scaffoldBackgroundColor: scaffoldBackgroundColor,
   textTheme: textTheme,
   primaryColor: Color.fromRGBO(191, 85, 236, 1),
+  secondaryHeaderColor: textColor,
   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
   useMaterial3: true,
 );

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:paintget/features/paint_modification/presentation/view/paint_modification_screen.dart';
 
 class PaintPreviewPicture extends StatelessWidget {
-  const PaintPreviewPicture({super.key, required this.backgroundColor});
-
-  final Color backgroundColor;
+  const PaintPreviewPicture({super.key});
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.only(top: 30),
       child: Container(
@@ -13,7 +13,12 @@ class PaintPreviewPicture extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(70),
-          color: backgroundColor,
+          color: theme.hintColor,
+        ),
+        child: GestureDetector(
+          onTap: () => Navigator.of(
+            context,
+          ).popAndPushNamed(PaintModificationScreen.routeName),
         ),
       ),
     );
